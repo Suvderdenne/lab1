@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img{
+        width: 300px;
+    }
+</style>
+<body>
+    <img id="zurag" src="moon.jpg">
+    <button onclick="solih()">
+        Солих
+    </button>
+</body>
+<script>
+    let i=1;
+    function solih(){
+       
+        // if (document.getElementById('zurag').src=='file:///C:/Users/User/Desktop/moon.jpg'){
+        //     document.getElementById('zurag').src='sun.jpg'
+        // }
+        // else{
+        //     document.getElementById('zurag').src='moon.jpg'
+        // }
+        // console.log(document.getElementById('zurag').src)
+        
+        if (i==1){
+            document.getElementById('zurag').src='sun.jpg';
+            i=0;
+        }else if(i==0){
+            document.getElementById('zurag').src='moon.jpg';
+            i=1;
+        }
+    }
+</script>
+</html>
